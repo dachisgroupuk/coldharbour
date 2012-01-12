@@ -108,7 +108,7 @@ input[type=file]:focus,input[type=checkbox]:focus,select:focus {
 	margin: 0;
 	padding:0;
 	width:100%;
-	background-color:#dddddd;
+	background-color:#dedede;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
 }
 
