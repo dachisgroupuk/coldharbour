@@ -25,7 +25,7 @@ This stylesheet adds functionality to the core.css
   background-color: #e06359;
 }
 #header .alert-message.warning {
-  background-color: #ffd75a;
+  background-color: #f8f0bd;
 }
 #header .alert-message.success {
   background-color: #74c474;
@@ -58,7 +58,7 @@ div.alert-message a.close:hover {
 	font-size: 3em;
 	line-height:1em;
 	font-weight:bold;
-	border-bottom:4px solid #111;
+	border-bottom:4px solid #CACACA;
 	
 }
 
@@ -74,7 +74,7 @@ div.alert-message a.close:hover {
 
 #profile #nickname a {
 	text-decoration:none;
-	color:#fff;
+	color:#666;
 	display:block;
 }
 

@@ -18,7 +18,7 @@ strong {font-weight: bold;}
 b {font-weight: bold;}
 em {font-style: italic;}
 
-a {text-decoration: underline;color:#378edf;}
+a {text-decoration: underline; color:#378edf;}
 a:hover {color:#333;}
 
 img {border: 0;}
@@ -108,7 +108,8 @@ input[type=file]:focus,input[type=checkbox]:focus,select:focus {
 	margin: 0;
 	padding:0;
 	width:100%;
-	background-color:#383535;
+	background-color:#EAEAEA;
+	border-bottom: 1px solid #CACACA;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
 }
 
@@ -120,7 +121,7 @@ input[type=file]:focus,input[type=checkbox]:focus,select:focus {
 #header h1#site-title a {
 	margin: 0;
 	padding: 0;
-	color: #fff;
+	color: #333;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 4.2em;
@@ -128,11 +129,17 @@ input[type=file]:focus,input[type=checkbox]:focus,select:focus {
 	font-style: normal;
 	font-weight: 700;
 }
+#header h1#site-title em {
+	font-style:normal;
+}
+#header h1#site-title em.blue {color:#368dde;}
+#header h1#site-title em.red {color:#ee0000;}
+#header h1#site-title em.green {color:#34b506;}
 
 #header h2#site-description {
 	margin: 1px 0 0 0;
 	padding: 0;
-	color: #ccc;
+	color: #999;
 	text-transform: uppercase;
 	font-size: 3em;
 	line-height: 0.8em;
@@ -142,12 +149,12 @@ input[type=file]:focus,input[type=checkbox]:focus,select:focus {
 
 /*---------- Navigation ----------*/
 #navigation {
-	border-top:4px solid #111;
+	border-top:4px solid #CACACA;
 }
 #navigation ul li {
 	font-size:1.9em;
 	width: 100%;
-	border-bottom: 1px solid #111;
+	border-bottom: 1px solid #CACACA;
 }
 
 #navigation ul li:last-child {
@@ -156,7 +163,7 @@ input[type=file]:focus,input[type=checkbox]:focus,select:focus {
 
 #navigation ul li a, 
 #navigation ul li a:link {
-	color:#ccc;
+	color:#666;
 	text-decoration:none;
 	display:block;
 	padding: 10px 3.125%;
