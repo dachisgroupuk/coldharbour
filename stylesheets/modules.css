@@ -6,15 +6,6 @@ This stylesheet adds functionality to the core.css
 #header .alert-message {
 	  background-color: rgba(0, 0, 0, 0.15);
 	  background-repeat: repeat-x;
-	  background-image: -khtml-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.15)));
-	  background-image: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.15));
-	  background-image: -ms-linear-gradient(transparent, rgba(0, 0, 0, 0.15));
-	  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.15)));
-	  background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.15));
-	  background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.15));
-	  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='transparent', endColorstr='rgba(0, 0, 0, 0.15)', GradientType=0)";
-	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='transparent', endColorstr='rgba(0, 0, 0, 0.15)', GradientType=0);
-	  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.15));
 	  background-color: #e6e6e6;
 	  margin:10px 3.125%;
 	  padding: 10px;
