@@ -1,0 +1,96 @@
+/*
+This stylesheet adds functionality to the core.css
+*/
+
+/*---------- Alerts ----------*/
+#header .alert-message {
+	  background-color: rgba(0, 0, 0, 0.15);
+	  background-repeat: repeat-x;
+	  background-image: -khtml-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.15)));
+	  background-image: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.15));
+	  background-image: -ms-linear-gradient(transparent, rgba(0, 0, 0, 0.15));
+	  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.15)));
+	  background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.15));
+	  background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.15));
+	  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='transparent', endColorstr='rgba(0, 0, 0, 0.15)', GradientType=0)";
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='transparent', endColorstr='rgba(0, 0, 0, 0.15)', GradientType=0);
+	  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.15));
+	  background-color: #e6e6e6;
+	  margin:10px 3.125%;
+	  padding: 10px;
+	  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+	  -webkit-border-radius: 4px;
+	  -moz-border-radius: 4px;
+	  border-radius: 4px;
+}
+
+#header .alert-message p {
+  color: #333;
+  margin-bottom: 0;
+  font-size:1.4em;
+}
+
+#header .alert-message.error {
+  background-color: #e06359;
+}
+#header .alert-message.warning {
+  background-color: #ffd75a;
+}
+#header .alert-message.success {
+  background-color: #74c474;
+}
+#header .alert-message.info {
+  background-color: #30c0fb;
+}
+#header .alert-message a.close {
+  float: right;
+  margin-top: -2px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  filter: alpha(opacity=50);
+  -khtml-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+div.alert-message a.close:hover {
+  text-decoration: none;
+  filter: alpha(opacity=50);
+  -khtml-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+
+/*---------- Profile ----------*/
+#profile {
+	color: #ccc;
+	font-size: 3em;
+	line-height:1em;
+	font-weight:bold;
+	border-bottom:4px solid #111;
+	
+}
+
+#profile .profile {
+	padding: 10px 3.125%;	
+}
+
+#profile #nickname {
+	padding:0 0 0 35px;
+	text-align:left;
+	background: url('../images/glyphs/user.png') no-repeat 0 0;
+}
+
+#profile #nickname a {
+	text-decoration:none;
+	color:#fff;
+	display:block;
+}
+
+#profile #nickname a:hover {
+	color:#ccc;
+}

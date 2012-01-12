@@ -28,6 +28,7 @@
   
   <link href="stylesheets/reset.css?v=1" rel="stylesheet" media="screen" />
   <link href="stylesheets/core.css?v=1" rel="stylesheet" media="screen" />
+  <link href="stylesheets/modules.css?v=1" rel="stylesheet" media="screen" />
   <link href="stylesheets/core_print.css?v=1" rel="stylesheet" media="print" />
   
   	<!--[if lt IE 9]>
@@ -42,12 +43,22 @@
 <div id="site" role="document">
   <header id="header" role="banner">
       
+    <div class="alert-message warning" role="alert">
+        <p>The old monks of Dunfermline were very fond of them. They had a great porpoise grant from the crown.</p>
+    </div>  
+    
+    <div id="profile">
+        <dl class="profile">
+            <dt id="nickname"><a href="" title="nickname">nickname</a></dt>
+        </dl>
+    </div>
+      
     <hgroup>
 	    <h1 id="site-title"><a href="" title="" rel="home">Coldharbour</a></h1>
 		<h2 id="site-description">A framework</h2>
 	</hgroup><!-- #hgroup -->
 				
-	<nav id="access" role="assistive">
+	<nav id="access" role="navigation">
 		<div class="skip-link"><a class="assistive-text" href="#content" title="Skip to primary content">Skip to primary content</a></div>
 		<div class="skip-link"><a class="assistive-text" href="#sidebar" title="Skip to secondary content">Skip to secondary content</a></div>
     </nav><!-- #access nav -->
@@ -63,7 +74,39 @@
   </header><!-- #header -->
  
   <div id="content">
-     
+     <section id="posts">
+        <article class="post">
+            <header class="post-header">  
+                <h1>It is upon record, that three centuries ago the tongue of the Right Whale was</h1>
+                 <div class="post-meta">
+                     <cite class="author">by <a href="" title="Mobi Dick">Mobi Dick</a></cite>
+                     <time datetime="2012-01-12T17:00">5pm on January 12th</time>             
+                 </div>
+            </header>
+            
+            <div class="post-content">
+                <p>It is upon record, that three centuries ago the tongue of the Right Whale was esteemed a great delicacy in France, and commanded large prices there. Also, that in Henry VIIIth's time, a certain cook of the court obtained a handsome reward for inventing an admirable sauce to be eaten with barbacued porpoises, which, you remember, are a species of whale. Porpoises, indeed, are to this day considered fine eating. The meat is made into balls about the size of billiard balls, and being well seasoned and spiced might be taken for turtle-balls or veal balls. The old monks of Dunfermline were very fond of them. They had a great porpoise grant from the crown.</p>
+
+                <p>It is upon record, that three centuries ago the tongue of the Right Whale was esteemed a great delicacy in France, and commanded large prices there. Also, that in Henry VIIIth's time, a certain cook of the court obtained a handsome reward for inventing an admirable sauce to be eaten with barbacued porpoises, which, you remember, are a species of whale. Porpoises, indeed, are to this day considered fine eating. The meat is made into balls about the size of billiard balls, and being well seasoned and spiced might be taken for turtle-balls or veal balls. The old monks of Dunfermline were very fond of them. They had a great porpoise grant from the crown.</p>
+            </div>
+            
+            <footer class="post-meta">
+                <span class="comments"><a href="#comments" title="4 replies">4 replies</a></span>      
+            </footer>
+        </article>
+     </section>    
+     <section id="sidebar">
+         <aside class="widget" id="search">
+         	<h3 class="widget-title">Search</h3>
+         	<form action="" id="searchform" method="get" role="search">
+                <div>
+                    <label for="s" class="screen-reader-text">Search for:</label>
+                    <input type="text" placeholder="Search posts..." id="s" name="s" value="">
+                    <input type="submit" value="Search" id="searchsubmit">
+                </div>
+            </form>
+         </aside>
+     </section>
   </div><!-- #content -->
  
   <footer id="colophon" role="contentinfo">
