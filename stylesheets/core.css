@@ -171,6 +171,15 @@ input[type=file]:focus,input[type=checkbox]:focus,select:focus {
 	-moz-transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
 	-o-transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
 }
+#navigation ul li:nth-child(2) a:hover
+{
+	background-color:#ee0000;	
+}
+
+#navigation ul li:nth-child(3) a:hover
+{
+	background-color:#34b506;	
+}
 
 /*---------- Posts ----------*/
 
