@@ -1,0 +1,103 @@
+html body {
+	font-size: 62.5%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: left;
+	background: #FFF;
+	color: #000;
+	height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin: 0;
+	line-height: 1em;
+}
+strong {font-weight: bold;}
+b {font-weight: bold;}
+em {font-style: italic;}
+
+a {text-decoration: underline;}
+
+img {border: 0;}
+p img {padding: 0;}
+
+img, iframe {
+    height: auto;
+    max-width: 100%;
+}
+object{
+    max-width: 100%;
+}
+hr {
+	background: #CCC;
+	border: 0;
+	height: 1px;
+	margin: 10px 0;
+	clear: both;
+}
+
+
+/*---------- interaction ----------*/
+
+*::-moz-selection {
+    background: #49A9D6;
+    color: #FFF;
+}
+
+input:focus, textarea:focus {
+	border: 1px solid #336699 !important;
+	color: #333 !important;
+}
+
+/*----------------------------------------
+  @ min-width: 240px (base)
+----------------------------------------*/
+
+/*---------- site ----------*/
+
+#site {
+	margin: 0;
+	padding: 0;
+	min-width: 240px;
+}
+#content {
+	clear: both;
+	width: 100%;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+
+/*---------- Headline ----------*/
+	
+#header {
+	float: left;
+	margin: 0;
+	padding: 10px 3.125% 15px 3.125%; /* 10px/320px */
+	width: 93.75%; /* 300px/320px */
+}
+
+#header h1#site-title a {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 4.2em;
+	line-height: 0.857em;
+	font-style: normal;
+	font-weight: 700;
+}
+
+#header h2#site-description {
+	margin: 1px 0 0 0;
+	padding: 0;
+	color: #3d94e4;
+	text-transform: uppercase;
+	font-size: 3em;
+	line-height: 0.8em;
+	font-style: normal;
+	font-weight: 400;
+/*	word-wrap: break-word;*/
+}
+
