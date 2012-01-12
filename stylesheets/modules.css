@@ -44,18 +44,14 @@ This stylesheet adds functionality to the core.css
 }
 #header .alert-message a.close {
   float: right;
-  margin-top: -2px;
-  color: #fff;
-  font-size: 20px;
+  margin-top: -7px;
+  color: #333;
+  font-size: 2em;
   font-weight: bold;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
   filter: alpha(opacity=50);
   -khtml-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
 }
 div.alert-message a.close:hover {
   text-decoration: none;
