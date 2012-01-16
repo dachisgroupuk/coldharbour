@@ -125,8 +125,8 @@ input[type=file]:focus,input[type=checkbox]:focus,select:focus {
 	color: #333;
 	text-transform: uppercase;
 	text-decoration: none;
-	font-size: 4.2em;
-	line-height: 0.857em;
+	font-size: 3.6em;
+	line-height: 0.833333333em; /*30px*/
 	font-style: normal;
 	font-weight: 700;
 }
@@ -196,7 +196,6 @@ input[type=file]:focus,input[type=checkbox]:focus,select:focus {
 	width: 100%;
 	margin: 0;
 	padding: 20px 0 60px 0;
-	border-bottom: 1px solid #A6A6A6;
 }
 
 /*---------- Post: header (standard) ----------*/
@@ -214,8 +213,6 @@ input[type=file]:focus,input[type=checkbox]:focus,select:focus {
 
 .post h1 a {text-decoration: none; color: #000;}
 .post h1 a:hover {color:#378edf;}
-
-#posts article {border-bottom: 1px solid #ccc; padding: 20px 0 40px 0;}
 
 /*---------- Post: content ----------*/
 .post-content p {
@@ -338,6 +335,111 @@ input[type=file]:focus,input[type=checkbox]:focus,select:focus {
 	color: #999;
 	font-size: 1.2em;
 	text-align: center;
+}
+
+/*----------------------------------------
+
+  ----- MEDIA QUERIES GO! -----
+
+----------------------------------------*/
+/*----------------------------------------
+  @ max-width: 320px
+----------------------------------------*/
+@media screen and (min-width: 320px) {
+
+}
+
+/*----------------------------------------
+  @ min-width: 600px
+----------------------------------------*/
+
+@media screen and (min-width: 600px) {
+	
+	#header #profile {
+		float:right;
+		padding:0 3.125% 0 0;
+		border-bottom:0;
+	}
+	#header #profile #nickname a {
+		float:right;
+	}
+	#header hgroup {
+		float:left;
+		width:60%;
+	}
+	#header h1#site-title a {
+		font-size: 4.2em;
+		line-height: 1em;
+	}
+	
+	#header h2#site-description {
+		font-size: 3em;
+		line-height: 0.8em;
+	}
+	
+	#header #navigation {
+		overflow:hidden;
+		clear:left;
+	}
+	
+	/*---------- Post: content ----------*/
+
+	#posts article {
+		max-width: 680px;
+	}
+	
+
+}
+
+/*----------------------------------------
+  @ min-width: 768px
+----------------------------------------*/
+
+@media screen and (min-width: 768px) {
+
+	
+	#navigation ul li:first-child {
+		padding:0 2.60416667% 0 3.125%; /*0 20/768 0 10/320*/
+	}
+	/*---------- Navigation ----------*/
+	#navigation ul li {
+		float:left;
+		width:auto;
+		padding:0 2.60416667% 0 0; /*20/768*/
+	}
+	
+
+	#header #navigation ul li a:hover {
+		background-color:transparent;
+		color:#111;
+	}
+	
+}
+
+/*----------------------------------------
+  @ min-width: 1180px
+----------------------------------------*/
+
+@media screen and (min-width: 1100px) {
+	#posts {
+		float: left;
+		clear: none;
+		margin: 10px 0;
+		width: 50%; /*600px/1200px*/
+		max-width: 620px;
+	}
+	#sidebar {
+		float: left;
+		clear: none;
+		margin: 20px 0 0 5%; /* 60px/1200px */
+		max-width: 460px;
+		width: 45%; /* 540px/1200px */
+		background: none;
+	}
+	#colophon {
+		clear:both;
+		border-top:1px solid #CACACA;
+	}
 }
 
 
