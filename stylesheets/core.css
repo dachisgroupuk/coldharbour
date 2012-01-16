@@ -354,7 +354,7 @@ input[type=file]:focus,input[type=checkbox]:focus,select:focus {
 ----------------------------------------*/
 
 @media screen and (min-width: 600px) {
-	
+
 	#header #profile {
 		float:right;
 		padding:0 3.125% 0 0;
@@ -396,8 +396,7 @@ input[type=file]:focus,input[type=checkbox]:focus,select:focus {
 ----------------------------------------*/
 
 @media screen and (min-width: 768px) {
-
-	
+	/*---------- site ----------*/	
 	#navigation ul li:first-child {
 		padding:0 2.60416667% 0 3.125%; /*0 20/768 0 10/320*/
 	}
@@ -421,6 +420,13 @@ input[type=file]:focus,input[type=checkbox]:focus,select:focus {
 ----------------------------------------*/
 
 @media screen and (min-width: 1100px) {
+	
+	/*---------- site ----------*/
+	#content {
+		padding: 0 2.34375% 0 2.34375%; /* 30px/1280px */
+		width: 95.3125%; /* 1220px/1280px */
+	}
+	
 	#posts {
 		float: left;
 		clear: none;
