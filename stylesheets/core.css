@@ -38,7 +38,9 @@ hr {
 	margin: 10px 0;
 	clear: both;
 }
-
+.hide {
+	display:none;
+}
 
 /*---------- interaction ----------*/
 
@@ -311,7 +313,7 @@ input[type=file]:focus,input[type=checkbox]:focus,select:focus {
 	margin: 0;
 	padding: 5px 10px;
 	height: 25px; 
-	width: 96.6666667%; /* 290px/300px */
+	width: 280px;
 	color: #CCC;
 	font-size: 1.6em;
 	font-family: "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, sans-serif;

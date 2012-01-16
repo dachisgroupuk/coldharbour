@@ -55,21 +55,22 @@ div.alert-message a.close:hover {
 /*---------- Profile ----------*/
 #profile {
 	color: #ccc;
-	font-size: 3em;
+	font-size: 2em;
 	line-height:1em;
 	font-weight:bold;
 	border-bottom:4px solid #CACACA;
-	
 }
 
 #profile .profile {
 	padding: 10px 3.125%;	
 }
-
+#profile #nickname img {
+	float:left;
+	margin:0 10px 0 0;
+}
 #profile #nickname {
-	padding:0 0 0 35px;
+	line-height:25px;
 	text-align:left;
-	background: url('../images/glyphs/user.png') no-repeat 0 0;
 }
 
 #profile #nickname a {
