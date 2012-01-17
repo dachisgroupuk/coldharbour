@@ -10,39 +10,47 @@ html body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
+	font-weight: bold;
 	margin: 0;
 	line-height: 1em;
 }
-strong {font-weight: bold;}
-b {font-weight: bold;}
-em {font-style: italic;}
-
-a {text-decoration: underline; color:#378edf;}
-a:hover {color:#333;}
 
 img {border: 0;}
 p img {padding: 0;}
 
-img, iframe {
-    height: auto;
-    max-width: 100%;
-}
-object{
-    max-width: 100%;
-}
-hr {
-	background: #CCC;
-	border: 0;
-	height: 1px;
-	margin: 10px 0;
-	clear: both;
-}
 .hide {
 	display:none;
 }
 
-/*---------- interaction ----------*/
+/*---------- Preformatted text and code ----------*/
+/* Allows line wrapping of 'pre' */
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+pre, code, kbd, samp {
+	font: 1em/1.6em Menlo, Consolas, 'DejaVu Sans Mono', Monaco, 'Courier New', Courier, monospace;
+}
+
+/*---------- Tables ----------*/
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width:100%;
+}
+
+th {
+	text-align: left;
+}
+
+tr, th, td {
+	padding-right: 3.125%; /* 10px/320px */
+}
+
+/*---------- Interaction ----------*/
 
 *::-moz-selection {
     background: #49A9D6;
@@ -50,12 +58,68 @@ hr {
 }
 
 /*---------- Forms ----------*/
+form {
+	margin: 0;
+}
+
+fieldset {
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+}
+
+label {
+	display: block;
+}
+
+button, input, select, textarea {
+	vertical-align: baseline;
+	*vertical-align: middle;
+}
+
+button, input {
+	line-height: normal;
+	*overflow: visible;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+	background-color: #ffffff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)),to(rgb(224, 224, 224)));
+	background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(224, 224, 224));
+	background-image: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(224, 224, 224));
+	background-image: -o-linear-gradient(top, rgb(255, 255, 255), rgb(224, 224, 224));
+	background-image: -ms-linear-gradient(top, rgb(255, 255, 255), rgb(224, 224, 224));
+	background-image: linear-gradient(top, rgb(255, 255, 255), rgb(224, 224, 224));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ffffff', EndColorStr='#e0e0e0');
+	border-color: #CCCCCC #CCCCCC #AAAAAA;
+	border-radius: 3px 3px 3px 3px;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0 0 1px #FFFFFF inset;
+	padding: 5px 10px;
+	font-size: 1em;
+	color: #333;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+	text-decoration:underline;
+	cursor: pointer;
+}
+
 input:focus,textarea:focus {
 	outline: 0;
 	border-color: rgba(82,168,236,0.8);
 	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.1),0 0 8px rgba(82,168,236,0.6);
 	-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.1),0 0 8px rgba(82,168,236,0.6);
 	box-shadow: inset 0 1px 3px rgba(0,0,0,0.1),0 0 8px rgba(82,168,236,0.6);
+	border: 1px solid #999999;
 }
 input[type=file]:focus,input[type=checkbox]:focus,select:focus {
 	-webkit-box-shadow: none;
@@ -64,11 +128,137 @@ input[type=file]:focus,input[type=checkbox]:focus,select:focus {
 	outline: 1px dotted #666;
 }
 
+input[type="checkbox"], input[type="radio"] {
+	box-sizing: border-box;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+/*---------- Links ----------*/
+
+a, a:visited {
+    text-decoration: underline; 
+    color:#378edf;
+}
+
+a:hover {
+	color:#333;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+/* Better CSS outline suppression: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active {
+	outline: none;
+}
+
+
+/*---------- Figures ----------*/
+figure {
+	margin: 0;
+}
+
+
+/*---------- Embedded content ----------*/
+img, object, video, iframe {
+	max-width: 100%; /* Automatically scales images larger than the container. Consider this first: http://unstoppablerobotninja.com/entry/fluid-images/ */
+	/* _width: 100%; /* IE6 doesn't support max-width, so we just use width. If the image is larger than the container, just uncomment this. If it is smaller than the container, uncomment and change the 100% value to an absolute one */
+	height: auto;
+}
+
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic; /* Improve IE's resizing of images: css-tricks.com/ie-fix-bicubic-scaling-for-images */
+}
+
+/* Corrects overflow displayed oddly in IE9 */
+svg:not(:root) {
+	overflow: hidden;
+}
+
+/*---------- Abbreviations ----------*/
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+
+/*---------- Marked/inserted/deleted text ----------*/
+
+mark {
+	background: #ff0;
+}
+
+ins {
+	text-decoration: none;
+	background: #ff9;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+/*---------- Others ----------*/
+hr {
+	background: #CCC;
+	border: 0;
+	height: 1px;
+	margin: 10px 0;
+	clear: both;
+}
+
+strong, b, dt {
+	font-weight: bold;
+}
+
+em {font-style: italic;}
+
+dfn {
+	font-style: italic;
+}
+
+var, address {
+	font-style: normal;
+	font-size:1.4em;
+}
+
+/* Position 'sub' and 'sup' without affecting line-height: gist.github.com/413930 */
+sub, sup {
+	font-size: 1em;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
 /*----------------------------------------
   @ min-width: 240px (base)
 ----------------------------------------*/
 
-/*---------- site ----------*/
+/*---------- Site ----------*/
 
 #site {
 	margin: 0;
@@ -118,7 +308,9 @@ input[type=file]:focus,input[type=checkbox]:focus,select:focus {
 	padding: 10px 3.125% 15px 3.125%; /* 10px/320px */
 	width: 93.75%; /* 300px/320px */
 }
-
+#header h1#site-title {
+	font-size:1em;
+}
 #header h1#site-title a {
 	margin: 0;
 	padding: 0;
@@ -193,91 +385,91 @@ input[type=file]:focus,input[type=checkbox]:focus,select:focus {
 
 #posts article {
 	float: left;
-	width: 100%;
-	margin: 0;
-	padding: 20px 0 60px 0;
+	width: 93.75%; /* 300px/320px */
+	margin: 10px 0;
+	padding: 0 3.125% 10px 3.125%; /* 10px/320px */
 }
 
 /*---------- Post: header (standard) ----------*/
-
-.post h1 {
-	margin: 0;
-	padding: 0 3.125%; /* 10px/320px */
-	width: 93.75%; /* 300px/320px */
-	color: #000;
-	font-size: 2.9em;
-	line-height: 1em;
-	font-style: normal;
-	font-weight: 700;
-}
-
-.post h1 a {text-decoration: none; color: #000;}
-.post h1 a:hover {color:#378edf;}
-
-/*---------- Post: content ----------*/
-.post-content p {
-	margin: 10px 0 10px 0;
-	padding: 0 3.125% 10px 3.125%; /* 10px/320px */
-	width: 93.75%; /* 300px/320px */
+#posts article p {
+	padding:10px 0;
 	color: #333;
 	font-size: 1.6em;
 	line-height: 1.438em;
 	word-wrap: break-word;
 }
-.post-content ul, .post-content ol {
+
+#posts article ul, article ol {
 	margin: 10px 0 10px 0;
 	padding: 0 3.125% 10px 9.375%; /* 10px/320px, 30px/320px */
 	width: 87.5%; /* 280px/320px */
 	color: #333;
 	font-size: 1.6em;
-	line-height: 1.438em;
+	line-height: 1em;
 }
-.post-content ul li {margin: 0 0 10px 0; list-style: disc;}
-.post-content ol li {margin: 0 0 10px 0; list-style: decimal;}
 
-.post-content a {color: #336699; font-weight: bold;}
-.post-content a:hover {color: #000;}
+#posts article ul li {line-height: 1.438em;list-style: disc;}
+#posts article ol li {line-height: 1.438em;list-style: decimal;}
 
-.post-content blockquote {
+#posts article ul ul, 
+#posts article ol ol,
+#posts article ul li li, 
+#posts article ol li li {
+	font-size:1em;
+	padding-bottom:0;
+}
+
+#posts article blockquote {
 	margin: 0;
-	padding: 10px 3.125% 25px 3.125%; /* 10px/320px */
-	width: 93.75%; /* 300px/320px */
+	padding:10px 0;
 	color: #333;
 	font-style: italic;
+	font-size: 1.6em;
+	line-height: 1.438em;
 }
-.post-content blockquote p {
+#posts article blockquote p {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	display: inline;
-	font-size: 1.9em;
-	line-height: 1.2em;
-	font-style: italic;
-	font-weight: 500;
+	font-size:1em;
+}
+#posts article h1 {
+	color: #000;
+	font-size: 2.9em; 
+	line-height: 1em;
+	margin: 0; 
+	font-style: normal;
+	font-weight: 700;
+}
+
+#posts article h1 a {text-decoration: none; color: #000;}
+#posts article h1 a:hover {color:#378edf;}
+
+#posts article h2 {
+	font-size: 2.2em; 
+	line-height: 1em;
+	margin: 0; /*10px*/
+}
+
+#posts article h3 {
+	font-size: 1.6em; 
+	line-height: 1em;
+	margin: 0; 
+}
+
+#posts article h4, 
+#posts article h5, 
+#posts article h6 {
+	font-size:1.4em;
 }
 
 /*---------- Post: meta ----------*/
 
 .post-meta {
-	width: 93.75%; /* 300px/320px */
-	padding: 10px 3.125%; /* 10px/320px */
+	padding:10px 0;
 	font-size: 1.9em;
 	line-height: 1.2em;
 }
-
-/*---------- Pages ----------*/
-
-.page h1.post-title {
-	margin: 0;
-	padding: 0 3.125%; /* 10px/320px */
-	width: 93.75%; /* 300px/320px */
-	color: #000;
-	font-size: 2.9em;
-	font-weight: 600;
-	line-height: 1.1em;
-}
-.page h1.post-title a {text-decoration: none; color: #000;}
-.page h1.post-title a:hover {color: #336699;}
 
 /*---------- Sidebar ----------*/
 
@@ -385,10 +577,9 @@ input[type=file]:focus,input[type=checkbox]:focus,select:focus {
 	/*---------- Post: content ----------*/
 
 	#posts article {
-		max-width: 680px;
+		max-width: 620px;
 	}
 	
-
 }
 
 /*----------------------------------------
@@ -398,16 +589,14 @@ input[type=file]:focus,input[type=checkbox]:focus,select:focus {
 @media screen and (min-width: 768px) {
 	/*---------- site ----------*/	
 	#navigation ul li:first-child {
-		padding:0 2.60416667% 0 3.125%; /*0 20/768 0 10/320*/
+		padding:0 2.60416667% 0 3.125%; /*20px/768px, 10px/320px*/
 	}
 	/*---------- Navigation ----------*/
 	#navigation ul li {
 		float:left;
 		width:auto;
-		padding:0 2.60416667% 0 0; /*20/768*/
+		padding:0 2.60416667% 0 0; /*20px/768px*/
 	}
-	
-
 	#header #navigation ul li a:hover {
 		background-color:transparent;
 		color:#111;
@@ -416,30 +605,30 @@ input[type=file]:focus,input[type=checkbox]:focus,select:focus {
 }
 
 /*----------------------------------------
-  @ min-width: 1180px
+  @ min-width: 1024px
 ----------------------------------------*/
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1024px) { 
 	
 	/*---------- site ----------*/
 	#content {
-		padding: 0 2.34375% 0 2.34375%; /* 30px/1280px */
-		width: 95.3125%; /* 1220px/1280px */
+		padding: 0 0.9765625% 0 0.9765625%; /* 10px/1024px */
+		width: 98.046875%; /* 1004px/1024px */
 	}
 	
 	#posts {
 		float: left;
 		clear: none;
 		margin: 10px 0;
-		width: 50%; /*600px/1200px*/
+		width: 58.59375%; /*600px/1024px*/
 		max-width: 620px;
 	}
 	#sidebar {
 		float: left;
 		clear: none;
-		margin: 20px 0 0 5%; /* 60px/1200px */
-		max-width: 460px;
-		width: 45%; /* 540px/1200px */
+		margin: 20px 0 0 5.859375%; /* 60px/1024px */
+		max-width: 380px;
+		width: 35.15625%; /* 360px/1024px */
 		background: none;
 	}
 	#colophon {
