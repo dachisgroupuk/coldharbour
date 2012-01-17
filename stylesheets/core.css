@@ -316,7 +316,8 @@ var, address {
 	word-wrap: break-word;
 }
 
-#posts article ul, article ol {
+#posts article ul, 
+#posts article ol {
 	margin: 10px 0 10px 0;
 	padding: 0 3.125% 10px 9.375%; /* 10px/320px, 30px/320px */
 	width: 87.5%; /* 280px/320px */
@@ -497,6 +498,33 @@ var, address {
 		max-width: 620px;
 	}
 	
+	#posts article h1 {
+		font-size:2.5em;
+		margin:10px 0 0 0;
+	}
+	
+	#posts article .post-meta {
+		font-size: 1.7em;
+		line-height: 1.471em;
+	}
+	
+	#posts article p {
+		padding: 0 0 10px 0;
+		width: auto;
+		font-size: 1.5em;
+		line-height: 1.533em;
+	}
+	
+	#posts article ul, 
+	#posts article ol {
+		font-size: 1.5em;
+		line-height: 1.533em;
+	}
+	
+	#posts article blockquote {
+		font-size: 1.5em;
+		line-height: 1.533em;
+	}
 }
 
 /*----------------------------------------
