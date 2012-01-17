@@ -72,10 +72,6 @@ textarea {
 	vertical-align: top;
 }
 
-label {
-	display: block;
-}
-
 button, input, select, textarea {
 	vertical-align: baseline;
 	*vertical-align: middle;
@@ -84,68 +80,6 @@ button, input, select, textarea {
 button, input {
 	line-height: normal;
 	*overflow: visible;
-}
-
-button, input[type="button"], input[type="reset"], input[type="submit"] {
-	cursor: pointer;
-	-webkit-appearance: button;
-	background-color: #ffffff;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)),to(rgb(224, 224, 224)));
-	background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(224, 224, 224));
-	background-image: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(224, 224, 224));
-	background-image: -o-linear-gradient(top, rgb(255, 255, 255), rgb(224, 224, 224));
-	background-image: -ms-linear-gradient(top, rgb(255, 255, 255), rgb(224, 224, 224));
-	background-image: linear-gradient(top, rgb(255, 255, 255), rgb(224, 224, 224));
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ffffff', EndColorStr='#e0e0e0');
-	border-color: #CCCCCC #CCCCCC #AAAAAA;
-	border-radius: 3px 3px 3px 3px;
-	border-style: solid;
-	border-width: 1px;
-	box-shadow: 0 0 1px #FFFFFF inset;
-	padding: 5px 10px;
-	font-size: 1em;
-	color: #333;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
-	text-decoration:underline;
-	cursor: pointer;
-}
-
-input:focus,textarea:focus {
-	outline: 0;
-	border-color: rgba(82,168,236,0.8);
-	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.1),0 0 8px rgba(82,168,236,0.6);
-	-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.1),0 0 8px rgba(82,168,236,0.6);
-	box-shadow: inset 0 1px 3px rgba(0,0,0,0.1),0 0 8px rgba(82,168,236,0.6);
-	border: 1px solid #999999;
-}
-input[type=file]:focus,input[type=checkbox]:focus,select:focus {
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-	outline: 1px dotted #666;
-}
-
-input[type="checkbox"], input[type="radio"] {
-	box-sizing: border-box;
-}
-
-input[type="search"] {
-	-webkit-appearance: textfield;
-	-moz-box-sizing: content-box;
-	-webkit-box-sizing: content-box;
-	box-sizing: content-box;
-}
-
-input[type="search"]::-webkit-search-decoration {
-	-webkit-appearance: none;
-}
-
-button::-moz-focus-inner, input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
 }
 
 /*---------- Links ----------*/
@@ -235,7 +169,6 @@ dfn {
 
 var, address {
 	font-style: normal;
-	font-size:1.4em;
 }
 
 /* Position 'sub' and 'sup' without affecting line-height: gist.github.com/413930 */
