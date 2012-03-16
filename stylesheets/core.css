@@ -405,7 +405,7 @@ var, address {
 
 /*---------- Sidebar: search ----------*/
 
-#sidebar aside#search #searchform {
+#sidebar aside#search #searchform, #sidebar aside.widget_search #searchform {
 	width: 93.75%; /* 300px/320px */
 	padding: 0 3.125% 20px 3.125%; /* 10px/320px */
 }
